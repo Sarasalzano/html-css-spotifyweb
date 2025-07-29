@@ -34,7 +34,6 @@ hr {
     margin: 10px 0;
 }
 
-/* utility */
 button {
     background-color: transparent;
     border: 2px solid white;
@@ -59,7 +58,7 @@ button a {
     display: flex;
 }
 
-/* navigazione laterale */
+/********************************************* navigazione laterale **********************************************************/
 .navigation-container {
     background-color: black;
     width: 200px;
@@ -169,7 +168,7 @@ h3 + ul > li:first-child {
 }
 
 
-/* sezione principale */
+/*************************************************** sezione principale **************************************************/
 .content-container {
     background-color: #141922;
     flex-grow: 1;
