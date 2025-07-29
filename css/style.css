@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: aqua;
 }
 
 /* contenuto principale */
@@ -16,7 +15,7 @@
 
 .navigation-container {
     background-color: black;
-    width: 300px;
+    width: 200px;
     height: 100%;
 }
 
@@ -25,6 +24,12 @@
     .navigation-container{
         width: 50px;
     }
+}
+
+.call-to-action {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    position: sticky;
 }
 
 .main-container {
