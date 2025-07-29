@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+
+/* utility */
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+
 /* contenuto principale */
 .wrapper {
     /*DEBUG*/
@@ -26,18 +35,34 @@
     }
 }
 
-.call-to-action {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100px;
-    position: sticky;
-}
-
 .main-container {
     background-color: #141922;
     flex-grow: 1;
 }
 
+/* sezione call to action */
+.call-to-action {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 30px;
+    height: fit-content;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 
 /* fondo pagina */
