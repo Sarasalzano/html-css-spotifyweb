@@ -1,0 +1,45 @@
+/* regole generiche*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+/* contenuto principale */
+.wrapper {
+    /*DEBUG*/
+    background-color: red;
+    height: 300px;
+    display: flex;
+}
+
+.navigation-container {
+    background-color: black;
+    width: 300px;
+    height: 100%;
+}
+
+/* versione xs navigation container */
+@media screen and (max-width:552px) {
+    .navigation-container{
+        width: 50px;
+    }
+}
+
+.main-container {
+    background-color: #141922;
+    flex-grow: 1;
+}
+
+
+
+
+/* fondo pagina */
+footer {
+    background-color: #282828;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
