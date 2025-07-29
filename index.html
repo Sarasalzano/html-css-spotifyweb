@@ -12,17 +12,18 @@
 <body>
     <!--contenuto principale-->
     <main>
+        <div class="main-container">
         <!--container wrapper-->
-        <div class="wrapper">
+        <div class="wrapper-flex">
             <!-- navigazione laterale-->
             <div class="navigation-container">
                 <img src="./img/logo.svg" alt="logo spotify" id="logo-lg">
                 <img src="./img/logo-small.svg" alt="logo spotify" id="logo-sm">
                 <nav>
                     <ul>
-                        <li><a href="#"><img src="./img/home.svg" alt="home" class="nav-icons"><span class="nav-span"> Home</span></a></li>
-                        <li><a href="#"><img src="./img/search.svg" alt="cerca" class="nav-icons"><span class="nav-span"> Cerca</span></a></li>
-                        <li><a href="#"><img src="./img/libreria.svg" alt="libreria" class="nav-icons"><span class="nav-span"> La tua libreria</span></a></li>
+                        <li><a href="#"><img src="./img/home.svg" alt="home" class="nav-icons"><span class="display-none"> Home</span></a></li>
+                        <li><a href="#"><img src="./img/search.svg" alt="cerca" class="nav-icons"><span class="display-none"> Cerca</span></a></li>
+                        <li><a href="#"><img src="./img/libreria.svg" alt="libreria" class="nav-icons"><span class="display-none"> La tua libreria</span></a></li>
                     </ul>
                 </nav>
                 <h3>PLAYLIST</h3>
@@ -35,10 +36,16 @@
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                 </ul>
+                <div class="bottom-nav">
+                    <img src="./img/download.svg" alt="download" id="download"> <a href="#"> <span class="display-none">installa app</span></a>
+                    <hr class="display-none">
+                    <img src="./img/profile.svg" alt="profile" id="user-img">
+                    <span id="user" class="display-none">John Doe</span>
+                </div>
             </div>
 
 
-            <div class="main-container">
+            <div class="content-container">
                 <div class="call-to-action">
                     <button><a href="#">EFFETTUA L'UPGRADE</a></button>
                 </div>
@@ -48,6 +55,7 @@
     </main>
     <!--fondo pagina-->
     <footer></footer>
+    </div>
 
 </body>
 </html>
