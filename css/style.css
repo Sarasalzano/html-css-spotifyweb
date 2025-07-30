@@ -177,14 +177,41 @@ h3 + ul > li:first-child {
 /* sezione call to action */
 .call-to-action {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 100px;
+    height: 80px;
+    margin-bottom: 20px;
     position: sticky;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
+}
 
+.menu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    margin-bottom: 40px;
+}
+
+.menu a {
+    color: #707378;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* versione md sezione principale */
+@media screen and (max-width:878px) {
+   .menu ul {
+    flex-wrap: wrap;
+   }
+}
 
 /*************************************************** fondo pagina ********************************************************/
 footer {
