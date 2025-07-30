@@ -329,21 +329,24 @@ footer {
 }
 
 .block {
-    /*DEBUG*/
+    /*DEBUG
     background-color: rgb(81, 12, 12);
     height: 100%;
-    border: 1px dashed black;
+    border: 1px dashed black;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#middle {
-    display: block;
-}
 
 #right {
-    flex-shrink: ;
+    min-width: 40%;
+    flex-shrink: 1;
+}
+
+#middle {
+    display: block;
+    min-width: 40%;
 }
 
 #middle .fa-regular, .fa-solid {
