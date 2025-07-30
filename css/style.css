@@ -26,8 +26,8 @@ h2 {
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
-    margin-left: 20px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 h3 {
@@ -46,7 +46,7 @@ button {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 50px;
-    padding: 10px 30px;
+    padding: 8px 30px;
     margin-right: 10px;
 }
 
@@ -54,9 +54,12 @@ button {
 button a {
     color: white;
     font-weight: bold;
+    font-size: 10px;
 }
 
-
+img {
+    max-width: 100%;
+}
 
 /********************************************* contenuto principale *********************************************************/
 
@@ -184,13 +187,15 @@ h3 + ul > li:first-child {
 .content-container {
     background-color: #141922;
     height: 100vh;
+    margin-bottom: 60px;
+    overflow-y: auto;
     
 }
 
 /* sezione call to action */
 .call-to-action {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 80px;
+    height: 60px;
     margin-bottom: 20px;
     position: sticky;
     display: flex;
@@ -210,11 +215,12 @@ h3 + ul > li:first-child {
 }
 
 .menu li {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .menu a {
     color: #707378;
+    font-size: 12px;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -223,7 +229,6 @@ h3 + ul > li:first-child {
 
 .container-playlist {
     margin-left: 20px;
-    overflow-y: auto;
 }
 
 .container-playlist h2 {
@@ -237,13 +242,13 @@ h3 + ul > li:first-child {
     background-color: aqua;
     height: 400px;*/
     display: flex;
-  
+    margin-top: 20px;
 }
 
 .col {
     /*DEBUG
     background-color: brown;
-    border: 1px dashed black*/
+    border: 1px dashed black;*/
     width: calc(100% / 6);
     margin-right: 20px;
     margin-bottom: 10px;
@@ -257,9 +262,6 @@ h3 + ul > li:first-child {
     margin-bottom: 5px;
 }
 
-.col img {
-    max-width: 100%;
-}
 
 .artist {
     color: #707378;
@@ -267,6 +269,22 @@ h3 + ul > li:first-child {
     font-weight: bold;
 }
 
+.playlist-mix h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.playlist-mix .col {
+    margin-top: 20px;
+}
+
+.playlist-mix .row {
+    margin-top: 10px;
+}
+
+.border-radius50 {
+    border-radius: 50%;
+}
 
 /* versione md sezione principale */
 @media screen and (max-width:877px) {
@@ -281,17 +299,19 @@ h3 + ul > li:first-child {
 }
 
 /* versione s sezione principale */
-@media screen and (max-width:638px) {
+@media screen and (max-width:639px) {
    .col {
-    width: calc(100% / 3);
+    min-width: 40%
    }
 }
+
+
 
 
 /*************************************************** fondo pagina ********************************************************/
 footer {
     background-color: #282828;
-    height: 80px;
+    height: 60px;
     width: 100%;
     position: fixed;
     bottom: 0;
