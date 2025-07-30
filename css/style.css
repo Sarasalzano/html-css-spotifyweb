@@ -311,8 +311,26 @@ h3 + ul > li:first-child {
 /*************************************************** fondo pagina ********************************************************/
 footer {
     background-color: #282828;
-    height: 60px;
+    height: 80px;
     width: 100%;
     position: fixed;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
 }
+
+.block {
+    /*DEBUG*/
+    background-color: rgb(251, 251, 251);
+    height: 100%;
+    border: 1px dashed black;
+}
+
+#sx, #dx {
+    min-width: 200px;
+}
+
+#middle {
+    flex-grow: 1;
+}
+
