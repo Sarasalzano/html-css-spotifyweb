@@ -152,6 +152,11 @@ h3 + ul > li:first-child {
     vertical-align: middle;
 }
 
+/* hover sezione laterale */
+
+li:hover, nav span:hover {
+    color: white;
+}
 
 
 /* versione xs navigation container */
@@ -314,6 +319,9 @@ h3 + ul > li:first-child {
     display: block;
 } 
 
+.menu a:hover {
+    color: white;
+}
 /* versione md sezione principale */
 @media screen and (max-width:877px) {
    .row {
