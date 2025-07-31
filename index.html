@@ -18,15 +18,22 @@
         <div class="wrapper-flex">
             <!-- navigazione laterale-->
             <div class="navigation-container">
+
+
+                <div class="top-nav">
                 <img src="./img/logo.svg" alt="logo spotify" id="logo-lg">
                 <img src="./img/logo-small.svg" alt="logo spotify" id="logo-sm">
                 <nav>
-                    <ul>
+                    <ul id="top-list">
                         <li><a href="#"><img src="./img/home.svg" alt="home" class="nav-icons"><span class="display-none"> Home</span></a></li>
                         <li><a href="#"><img src="./img/search.svg" alt="cerca" class="nav-icons"><span class="display-none"> Cerca</span></a></li>
                         <li><a href="#"><img src="./img/libreria.svg" alt="libreria" class="nav-icons"><span class="display-none"> La tua libreria</span></a></li>
                     </ul>
                 </nav>
+                </div>
+
+
+                <div class="list-container">
                 <h3>PLAYLIST</h3>
                 <ul>
                     <li><span id="add">+</span> Crea Playlist</li>
@@ -37,8 +44,11 @@
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                 </ul>
+                </div>
+
+
                 <div class="bottom-nav">
-                    <img src="./img/download.svg" alt="download" id="download"> <a href="#"> <span class="display-none">installa app</span></a>
+                    <img src="./img/download.svg" alt="download" id="download"> <a href="#"> <span id="app-download" class="display-none">installa app</span></a>
                     <hr class="display-none">
                     <img src="./img/profile.svg" alt="profile" id="user-img">
                     <span id="user" class="display-none">John Doe</span>
@@ -49,7 +59,7 @@
             <div class="content-container">
                 <section>
                     <div class="call-to-action">
-                        <button><a href="#">EFFETTUA L'UPGRADE</a></button>
+                        <button>EFFETTUA L'UPGRADE</button>
                     </div>
                 </section>
 
@@ -63,60 +73,61 @@
                             <li><a href="#">NUOVE USCITE</a></li>
                             <li><a href="#">SCOPRI</a></li>
                         </ul>
+                        <hr class="green-hr">
                     </section>
                 </div>
                 <!--sezione playlist-->
                 <section>
                     <div class="container-playlist">
-                    <h2>Recently Played</h2>
-                    <div class="row">
-                        <div class="col">
-                            <img src="./img/metal_lifting.jpg" alt="playlist metal">
-                            <i class="fa-regular fa-circle-play"></i>
-                            <h3 class="title">Heavy Metal</h3>
-                            <span class="artist">Subtitle</span>
-                        </div>
+                        <h2>Recently Played</h2>
+                        <div class="row">
+                                <div class="col">
+                                    <img src="./img/metal_lifting.jpg" alt="playlist metal">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                    <h3 class="title">Heavy Metal</h3>
+                                    <span class="artist">Subtitle</span>
+                                </div>
 
-                        <div class="col">
-                            <img src="./img/stranger.jpeg" alt="playlist stranger things">
-                            <i class="fa-regular fa-circle-play"></i>
-                            <h3 class="title">Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h3>
-                            <span class="artist">Kyle Dixon & Michael Stein</span>
-                        </div>
+                                <div class="col">
+                                    <img src="./img/stranger.jpeg" alt="playlist stranger things">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                    <h3 class="title">Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                    <span class="artist">Kyle Dixon & Michael Stein</span>
+                                </div>
 
-                        <div class="col">
-                            <img src="./img/aquietplace.jpeg" alt="playlist a quiet place">
-                            <i class="fa-regular fa-circle-play"></i>
-                            <h3 class="title">A quiet place</h3>
-                            <span class="artist">Subtitle</span>
-                        </div>
+                                <div class="col">
+                                    <img src="./img/aquietplace.jpeg" alt="playlist a quiet place">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                    <h3 class="title">A quiet place</h3>
+                                    <span class="artist">Subtitle</span>
+                                </div>
 
-                        <div class="col">
-                            <img src="./img/split.jpeg" alt="playlist split">
-                            <i class="fa-regular fa-circle-play"></i>
-                            <h3 class="title">Split</h3>
-                            <span class="artist">Subtitle</span>
-                        </div>
+                                <div class="col">
+                                    <img src="./img/split.jpeg" alt="playlist split">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                    <h3 class="title">Split</h3>
+                                    <span class="artist">Subtitle</span>
+                                </div>
 
-                        <div class="col">
-                            <img src="./img/cure.jpeg" alt="playlist a cure for wellness">
-                            <i class="fa-regular fa-circle-play"></i>
-                            <h3 class="title">A cure for wellness</h3>
-                            <span class="artist">Subtitle</span>
-                        </div>
+                                <div class="col">
+                                    <img src="./img/cure.jpeg" alt="playlist a cure for wellness">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                    <h3 class="title">A cure for wellness</h3>
+                                    <span class="artist">Subtitle</span>
+                                </div>
 
-                        <div class="col">
-                            <img src="./img/sinister.jpeg" alt="sinister metal">
-                            <i class="fa-regular fa-circle-play"></i>
-                            <h3 class="title">Sinister</h3>
-                            <span class="artist">Subtitle</span>
-                        </div>
-                    </div>
+                                <div class="col">
+                                    <img src="./img/sinister.jpeg" alt="sinister metal">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                    <h3 class="title">Sinister</h3>
+                                    <span class="artist">Subtitle</span>
+                                </div>
+                            </div>
                     </div>
                 </section>
 
                 <!--sezione playlist personalizzate-->
-                <section class="playlist-mix">
+                <section>
                     <div class="container-playlist">
                     <h2>Creato per John Doe</h2>
                     <span class="artist">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</span>
@@ -134,7 +145,7 @@
                 </section>
 
                 <!--sezione artisti-->
-                <section class="artists">
+                <section>
                     <div class="container-playlist">
                     <h2>Artisti pi&ugrave; popolari</h2>
                     <span class="artist">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</span>
@@ -166,14 +177,16 @@
                 <span class="grey">Brano Nome</span>
             </div>
             <div class="footer-icon" id="icons-sx">
+                <ul>
                 <li><i class="fa-regular fa-heart"></i></li>
                 <li><i class="fa-regular fa-folder"></i></li>
+                </ul>
             </div>
         </div>
 
         <div class="block" id="middle">
             <div class="bar-top">
-                <ul>
+                <ul id="player">
                     <li><i class="fa-solid fa-shuffle"></i></li>
                     <li><i class="fa-solid fa-backward-step"></i></li>
                     <li> <i class="fa-regular fa-circle-play"></i></li>
@@ -185,7 +198,9 @@
             <div class="bar-bottom">
             <div class="time">0:25</div>
             <div class="bar-long">
-                <div class="bar-short"></div>
+                <div id="middle-bar" class="bar-short">
+                    <div class="dot"></div>
+                </div>
             </div>
             <div class="time">4:35</div>
         </div>
@@ -203,7 +218,9 @@
 
                 <div class="footer-container">
                     <div class="bar-long">
-                        <div class="bar-short"></div>
+                        <div id="right-bar" class="bar-short">
+                            <div class="dot"></div>
+                        </div>
                     </div>                    
                 </div>
 
