@@ -107,11 +107,17 @@ img {
 
 /* sezione centrale navigazione laterale */
 .list-container {
-    padding-left: 20px
+    padding-left: 20px;
 }
 
-.list-container ul {
+/*.list-container ul {
     overflow-y: auto;
+}*/
+
+.scroll {
+    overflow-y: auto;
+    height: 100%;
+    background-color: yellow;
 }
 
 .list-container h4 {
@@ -128,13 +134,10 @@ img {
     padding: 5px;
 }
 
-#add {
-    color: black;
-    background-color: #a3a3a3;
-    font-size: 35px;
-    padding: 0px 10px 0px;
-    margin-right: 5px;
-    vertical-align: middle;
+.fa-solid.fa-plus.plus-square {
+    width: 25px;
+    margin-left: 0;
+
 }
 
 h3 + ul > li:first-child {
@@ -186,6 +189,10 @@ h3 + ul > li:first-child {
 /**** hover sezione laterale ****/
 li:hover, nav span:hover, #app-download:hover, .nav-icons:hover {
     color: white;
+}
+
+.white-bg:hover i {
+    background-color: white;
 }
 
 #add:hover {
