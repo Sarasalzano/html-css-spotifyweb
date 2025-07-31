@@ -54,7 +54,7 @@ button {
     color: white;
     font-weight: bold;
     font-size: 10px;
-    margin-right: 220px;
+    margin-right: 210px;
 }
 
 img {
@@ -387,7 +387,6 @@ button:hover {
     transform: translate(-50%, -50%);
     margin-left: 0;
 }
-}
 
 /**** hover sezione principale ****/
 .img-container:hover img {
@@ -419,6 +418,17 @@ button:hover {
    .col {
     min-width: 40%
    }
+
+/**** versione xs sezione principale ****/
+@media screen and (max-width:552px) {
+    .call-to-action {
+        left: 0;
+    }
+
+    button {
+        margin-right: 20px;
+    }
+}
 }
 
 
