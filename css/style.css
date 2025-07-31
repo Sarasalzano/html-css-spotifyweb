@@ -51,7 +51,7 @@ button {
     border: 2px solid white;
     border-radius: 50px;
     padding: 8px 30px;
-    margin-right: 10px;
+    margin-right: 210px;
     position: absolute;
     right: 0;
     color: white;
@@ -105,7 +105,6 @@ img {
 
 #logo-sm {
     display: none;
-    padding: 20px;
 }
 
 #top-list li:first-child {
@@ -120,6 +119,20 @@ img {
 .list-container ul {
     overflow-y: auto;
     height: 220px;
+}
+
+.list-container h4 {
+    color: #747474;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.fa-solid.fa-plus {
+    background-color: #747474;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
 }
 
 #add {
@@ -182,11 +195,25 @@ li:hover, nav span:hover, #app-download:hover, .nav-icons:hover {
     color: white;
 }
 
+#add:hover {
+    background-color: white;
+}
+
+
 /**** versione xs navigation container ****/
 @media screen and (max-width:552px) {
-    .navigation-container{
+    .navigation-container {
         width: 50px;
         padding: 10px;
+    }
+
+    .nav-icons {
+        margin-left: 5px;
+        display: block;
+    }
+
+    #top-list li:first-child {
+        border: transparent;
     }
 
     #logo-lg {
@@ -197,10 +224,15 @@ li:hover, nav span:hover, #app-download:hover, .nav-icons:hover {
         display: block;
         width: 20px;
         margin-bottom: 10px;
+        margin-left: 4px;
     }
 
     h3, h3 + ul, .display-none {
         display: none;
+    }
+
+    .bottom-nav {
+        left: 15px
     }
 
     .bottom-nav img {
@@ -232,8 +264,9 @@ li:hover, nav span:hover, #app-download:hover, .nav-icons:hover {
     height: 60px;
     margin-bottom: 20px;
     position: fixed;
+    top: 0;
     z-index: 1;
-    width: 86%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -283,6 +316,8 @@ button:hover {
 /* sezione playlist */
 .container-playlist {
     margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .container-playlist h2 {
@@ -447,9 +482,9 @@ footer {
     width: 100px;
 }
 
-#middle .fa-regular {
+#middle .fa-regular.fa-circle-play {
     font-size: 25px;
-    margin-top: 0px;
+    margin-top: 5px;
     color: #747474;
 } 
 
@@ -550,12 +585,14 @@ footer {
 
 #player .fa-circle-play:hover {
     color: white;
+    font-size: 30px;
 }
 
 #hover-white:hover {
     color: white;
     text-decoration: underline;
 }
+
 
 
 /**** versione s sezione footer ****/
