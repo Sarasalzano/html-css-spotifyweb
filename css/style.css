@@ -561,7 +561,7 @@ footer {
 /**** versione s sezione footer ****/
 @media screen and (max-width:640px) {
     #icons-sx {
-display: block;
+    display: block;
 }
 
 }
