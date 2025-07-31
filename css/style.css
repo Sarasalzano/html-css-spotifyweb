@@ -109,12 +109,8 @@ img {
 /* sezione centrale navigazione laterale */
 .list-container {
     padding-left: 20px;
-    max-height: 250px;
-}
-
-.scroll {
+    min-height: 20px;
     overflow-y: auto;
-    height: 200px;
 }
 
 .list-container h4 {
@@ -140,6 +136,10 @@ img {
 h3 + ul > li:first-child {
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+.navigation-container h3 {
+    margin-left: 20px;
 }
 
 /* sezione inferiore navigazione laterale */
