@@ -90,12 +90,15 @@ img {
     margin-bottom: 10px;
 }
 
+.navigation-container i {
+    margin-bottom: 20px;
+}
+
+
 /* sezione superiore navigazione laterale*/
 #logo-lg {
-    max-width:100px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
+    width:100px;
+    margin: 10px 0px 20px 20px;
 }
 
 #logo-sm {
@@ -109,7 +112,7 @@ img {
 /* sezione centrale navigazione laterale */
 .list-container {
     padding-left: 20px;
-    min-height: 20px;
+    height: 50%;
     overflow-y: auto;
 }
 
@@ -117,6 +120,15 @@ img {
     color: #747474;
     font-size: 16px;
     margin-bottom: 10px;
+}
+
+.top-list-container {
+    padding-left: 20px;
+}
+
+.top-list-container span {
+    color: #747474;
+    font-weight: bold;
 }
 
 .fa-solid.fa-plus {
@@ -138,14 +150,10 @@ h3 + ul > li:first-child {
     margin-bottom: 20px;
 }
 
-.navigation-container h3 {
-    margin-left: 20px;
-}
-
 /* sezione inferiore navigazione laterale */
 .bottom-nav  {
     max-height: 100%;
-    margin-left: 20px;
+    padding-left: 20px;
     margin-bottom: 30px;
     width: 150px;
 }
@@ -184,17 +192,14 @@ h3 + ul > li:first-child {
 
 
 /**** hover sezione laterale ****/
-li:hover, nav span:hover, #app-download:hover, .nav-icons:hover {
+li:hover, nav span:hover, #app-download:hover, .nav-icons:hover, .top-list-container:hover span {
     color: white;
 }
 
-.white-bg:hover i {
+.white-bg:hover i, #add:hover {
     background-color: white;
 }
 
-#add:hover {
-    background-color: white;
-}
 
 
 /**** versione xs navigation container ****/
@@ -224,14 +229,18 @@ li:hover, nav span:hover, #app-download:hover, .nav-icons:hover {
         margin-left: 4px;
     }
 
+    .top-list-container {
+        display: none;
+    }
+
     h3, h3 + ul, .display-none {
         display: none;
     }
 
     .bottom-nav {
-        left: 15px
+        padding-left: 5px;
     }
-
+    
     .bottom-nav img {
         display: block;
     }
@@ -271,7 +280,6 @@ li:hover, nav span:hover, #app-download:hover, .nav-icons:hover {
 }
 
 /**** hover call to action ****/
-
 button:hover {
     width: 190px;
     height: 40px;
@@ -280,12 +288,6 @@ button:hover {
 }
 
 /* sezione menu */
-.menu {
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-}
-
 .green-bar::after {
     content: "";
     border: 1px solid greenyellow;
@@ -295,8 +297,11 @@ button:hover {
     margin-top: 2px;
 }
 
+.menu {
+    margin-top: 70px;
+}
+
 .menu ul {
-    height: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -316,8 +321,7 @@ button:hover {
 /* sezione playlist */
 .container-playlist {
     margin-left: 20px;
-    margin-bottom: 50px;
-    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .container-playlist h2 {
@@ -346,7 +350,6 @@ button:hover {
 .col h3 {
     font-size: 15px;
     line-height: 15px;
-    margin-top: 10px;
     margin-bottom: 5px;
 }
 
